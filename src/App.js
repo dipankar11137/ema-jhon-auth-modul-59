@@ -20,14 +20,13 @@ function App() {
         <Route path='/shop' element={<Shop></Shop>}></Route>
         <Route path='/orders' element={<Orders></Orders>}></Route>
         <Route path='/inventory' element={
-          <RequireAuth>
-            <Inventory></Inventory>
-          </RequireAuth>
+          <Inventory></Inventory>
+
         }></Route>
-        <Route path='/shipment' element={
-          <RequireAuth>
-            <Shipment></Shipment>
-          </RequireAuth>
+        <Route path="/shipment" element={
+
+          <Shipment></Shipment>
+
         }></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
